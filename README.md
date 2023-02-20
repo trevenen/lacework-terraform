@@ -4,11 +4,13 @@ sample lacework install with terraform
 To wrap a Lacework Helm file install in Terraform, you can use the helm_release resource in the Helm provider for Terraform. Here are the steps you can follow:
 
 First, you need to ensure that you have the Helm provider for Terraform installed. You can do this by adding the following code to your Terraform configuration:
+```bash
 terraform
 Copy code
 provider "helm" {
   version = "2.2.0"
 }
+```
 This will download and install the Helm provider.
 
 Next, you need to create a helm_release resource for your Lacework Helm chart installation. Here is an example code block you can use:
